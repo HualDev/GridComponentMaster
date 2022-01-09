@@ -1,0 +1,170 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--lightGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+main{
+    width: 90%;
+}
+
+.tittle{
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    
+}
+
+.tittle h1{
+    padding: 20px 20px 0;
+    color: var(--cyan);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tittle h2{
+    padding: 0px 20px;
+    color: var(--brightYellow);
+    font-size: 16px;
+    text-shadow: 2px 2px 2px var(--brightYellow);
+}
+
+.tittle p{
+    color: var(--grayishBlue);
+    padding: 0 20px 20px;
+    line-height: 1.5;
+    font-size: 13px;
+    margin: 0;
+}
+
+.monthly{
+    background-color: var(--cyan);
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.monthly h1{
+    margin: 0;
+    color: white;
+    padding: 20px 20px 10px;
+    font-size: 18px;
+}
+
+.monthly p{
+   color: white; 
+   
+}
+
+.price{
+    display: inline;    
+    font-size: 35px;
+    padding: 10px 10px 0px 20px;
+    margin: 0;
+}
+
+.month{
+    display: inline-block;
+    margin: 0;
+    opacity: 0.5;
+    padding: 20px 0 0px;
+}
+
+.full{
+    padding:10px 20px;
+    margin: 0;
+}
+
+.button{
+    width: 90%;
+    background-color: var(--brightYellow);
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.us{
+    background-color: var(--cyan);
+    opacity: 0.6;
+    margin: 0;
+}
+
+.us h1{
+    margin: 0;
+    color: white;
+    padding: 20px 20px 0;
+    font-size: 18px;
+}
+
+.us p{
+    color: white;
+    padding: 20px 60px 20px 20px ;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+@media(min-width: 700px){
+
+    body{
+        height: 1300px;
+    }
+
+    main{
+        width: 35%;
+    }
+
+    .tittle h1{
+        font-size: 30px;
+        padding: 40px 20px 0 40px;
+    }
+
+    .tittle h2{
+        font-size: 25px;
+        padding: 0 20px 0 40px;
+    }
+
+    .tittle p{
+        font-size: 20px;
+        opacity: 0.5;
+        padding: 0 40px 20px 40px;
+    }
+
+    .details{
+        display: flex;
+    }
+
+    .monthly{
+        width: 50%;
+        padding: 20px 0 10px 0;
+    }
+
+    .us{
+        width: 50%;
+        padding: 20px;
+    }
+
+    .us p{
+        padding: 20px 100px 20px 20px;
+    }
+}
